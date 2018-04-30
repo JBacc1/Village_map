@@ -1,0 +1,27 @@
+node 3890669285 historic 
+node 3890669286 historic 
+node 3890669290 historic 
+node 3858824509 fire_hydrant:type emergency 
+way 200978502 name 
+way 313319502 name 
+way 377094420 sport 
+way 368017688 name 
+way 368017696 name 
+way 367477234 name 
+way 385729994 name 
+way 372671589 name 
+way 396752209 name 
+way 396752211 name 
+way 385729986 name 
+way 394131759 name 
+way 372606866 name 
+way 372606870 name 
+way 372606872 name 
+way 372606873 name 
+way 394131756 name 
+way 164792703 name 
+way 181672543 name 
+way 368017677 name 
+way 389426323 fixme 
+way 164084898 building 
+way 242941398 name 

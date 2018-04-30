@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='false' generator='JOSM'>
+  <node id='-374923' action='modify' lat='45.70025182528' lon='3.93132903327'>
+    <tag k='amenity' v='parking' />
+  </node>
+  <node id='-374925' action='modify' lat='45.70131472049' lon='3.9312844102'>
+    <tag k='amenity' v='parking' />
+  </node>
+  <node id='-374927' action='modify' lat='45.70117962164' lon='3.93061408748'>
+    <tag k='highway' v='node' />
+    <tag k='name' v='Place du Grand Puits' />
+  </node>
+  <node id='-374929' action='modify' lat='45.70061004088' lon='3.93150873965'>
+    <tag k='highway' v='node' />
+    <tag k='name' v='Square Méchin' />
+  </node>
+  <node id='-374931' action='modify' lat='45.70054927671' lon='3.93117444573'>
+    <tag k='highway' v='node' />
+    <tag k='name' v='Passage &#xD;de la Ruelle' />
+  </node>
+  <node id='-374933' action='modify' lat='45.70118529842' lon='3.93093069415'>
+    <tag k='highway' v='node' />
+    <tag k='name' v='Place de la Fontaine' />
+  </node>
+  <node id='-374935' action='modify' lat='45.70066932377' lon='3.93141165309' />
+  <node id='-374937' action='modify' lat='45.70067681686' lon='3.93158197336' />
+  <node id='-374939' action='modify' lat='45.70065714749' lon='3.9315799617' />
+  <node id='-374941' action='modify' lat='45.70066417226' lon='3.93171742491' />
+  <node id='-374943' action='modify' lat='45.70058643136' lon='3.9316671335' />
+  <node id='-374945' action='modify' lat='45.70052133498' lon='3.93142774634' />
+  <node id='-374950' action='modify' lat='45.70080809042' lon='3.93127270194'>
+    <tag k='amenity' v='parking' />
+  </node>
+  <way id='-374947' action='modify'>
+    <nd ref='-374935' />
+    <nd ref='-374937' />
+    <nd ref='-374939' />
+    <nd ref='-374941' />
+    <nd ref='-374943' />
+    <nd ref='-374945' />
+    <nd ref='-374935' />
+    <tag k='landuse' v='grass' />
+  </way>
+</osm>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='false' generator='JOSM'>
+  <node id='-593434' action='modify' lat='45.7014568042' lon='3.93061048744'>
+    <tag k='name' v='Saint-Georges-en-Couzan' />
+    <tag k='place' v='town' />
+  </node>
+  <node id='-593436' action='modify' lat='45.70476000887' lon='3.85290401047'>
+    <tag k='name' v='Chalmazel' />
+    <tag k='place' v='village' />
+  </node>
+  <node id='-593438' action='modify' lat='45.73428359268' lon='3.97018424034'>
+    <tag k='name' v='Sail-sous-Couzan' />
+    <tag k='place' v='village' />
+  </node>
+  <node id='-593440' action='modify' lat='45.74597161597' lon='4.00295802951'>
+    <tag k='name' v='Boën' />
+    <tag k='place' v='village' />
+  </node>
+  <node id='-593442' action='modify' lat='45.70481152635' lon='3.85259165356' />
+  <node id='-593444' action='modify' lat='45.69325576409' lon='3.89098131492' />
+  <node id='-593446' action='modify' lat='45.69355790593' lon='3.91033835543' />
+  <node id='-593448' action='modify' lat='45.70119505593' lon='3.93074683735' />
+  <node id='-593450' action='modify' lat='45.71281607885' lon='3.93553495007' />
+  <node id='-593452' action='modify' lat='45.72008342641' lon='3.96743765831' />
+  <node id='-593454' action='modify' lat='45.72927466879' lon='3.97230251305' />
+  <node id='-593456' action='modify' lat='45.74955822111' lon='3.96580687523' />
+  <node id='-593458' action='modify' lat='45.75369063749' lon='3.97233000755' />
+  <node id='-593460' action='modify' lat='45.75375052533' lon='3.97859564781' />
+  <node id='-593462' action='modify' lat='45.76564755176' lon='3.94429428125' />
+  <node id='-593464' action='modify' lat='45.75710414197' lon='3.96443358421' />
+  <node id='-593466' action='modify' lat='45.75633428941' lon='3.97652597082' />
+  <node id='-593468' action='modify' lat='45.75053518464' lon='3.99921128519' />
+  <node id='-593470' action='modify' lat='45.74677973599' lon='4.0017318681' />
+  <node id='-593472' action='modify' lat='45.74055178956' lon='4.00786301574' />
+  <node id='-593474' action='modify' lat='45.73926808066' lon='4.00820363505' />
+  <node id='-593476' action='modify' lat='45.73943550302' lon='4.03146735191' />
+  <node id='-593478' action='modify' lat='45.73394275082' lon='4.0101111032' />
+  <node id='-593480' action='modify' lat='45.7240658985' lon='4.02302001386' />
+  <node id='-593482' action='modify' lat='45.71107941487' lon='4.02929212754' />
+  <node id='-593484' action='modify' lat='45.69936335469' lon='3.85635547721' />
+  <node id='-593486' action='modify' lat='45.76820015298' lon='3.95066914548'>
+    <tag k='name' v='Noirétable' />
+    <tag k='towards' v='yes' />
+  </node>
+  <node id='-593488' action='modify' lat='45.7393742086' lon='4.03288190676'>
+    <tag k='name' v='Feurs' />
+    <tag k='towards' v='yes' />
+  </node>
+  <node id='-593490' action='modify' lat='45.71230476725' lon='4.03042875051'>
+    <tag k='name' v='Montbrison' />
+    <tag k='towards' v='yes' />
+  </node>
+  <way id='-593492' action='modify'>
+    <nd ref='-593442' />
+    <nd ref='-593484' />
+    <nd ref='-593444' />
+    <nd ref='-593446' />
+    <nd ref='-593448' />
+    <nd ref='-593450' />
+    <nd ref='-593452' />
+    <nd ref='-593454' />
+    <nd ref='-593456' />
+    <nd ref='-593458' />
+    <nd ref='-593460' />
+    <tag k='highway' v='secondary' />
+  </way>
+  <way id='-593494' action='modify'>
+    <nd ref='-593462' />
+    <nd ref='-593464' />
+    <nd ref='-593466' />
+    <nd ref='-593460' />
+    <nd ref='-593468' />
+    <nd ref='-593470' />
+    <nd ref='-593472' />
+    <nd ref='-593474' />
+    <tag k='highway' v='secondary' />
+  </way>
+  <way id='-593496' action='modify'>
+    <nd ref='-593474' />
+    <nd ref='-593478' />
+    <nd ref='-593480' />
+    <nd ref='-593482' />
+    <tag k='highway' v='secondary' />
+  </way>
+  <way id='-593498' action='modify'>
+    <nd ref='-593474' />
+    <nd ref='-593476' />
+    <tag k='highway' v='secondary' />
+  </way>
+</osm>

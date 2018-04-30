@@ -1,0 +1,80 @@
+node 3718840751 onway_value=yes end_of=bridge lanes=1 aangle=0 angle=0 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 1757413984 place=hamlet 
+node 3966569619 onway_value=path aangle=310 angle=50 bangle=130 onway_key=highway 
+node 3966569620 onway_value=path aangle=310 angle=65 bangle=100 onway_key=highway 
+node 3966569628 onway_value=track aangle=103 angle=78 bangle=281 onway_key=highway 
+node 4083158305 onway_value=track aangle=352 angle=15 bangle=157 onway_key=highway 
+node 3718840940 onway_value=unclassified aangle=63 angle=115 bangle=248 onway_key=highway 
+node 3966571322 onway_value=track onway_key=highway aangle=340 angle=20 
+node 3718802895 onway_value=yes end_of=bridge lanes=1 aangle=223 angle=137 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 4051233019 onway_value=path aangle=293 angle=73 bangle=102 onway_key=highway 
+node 3952089053 onway_value=yes end_of=bridge angle=0 aangle=0 trail_visibility=intermediate onway_key=bridge onway_end_value=path onway_end_key=highway 
+node 4178759992 onway_value=track onway_key=highway aangle=185 angle=175 
+node 4165360951 onway_value=track aangle=65 angle=111 bangle=253 onway_key=highway 
+node 3979923931 onway_value=track aangle=50 angle=134 bangle=221 onway_key=highway 
+node 1750936526 onway_value=yes end_of=bridge angle=343 aangle=17 onway_key=bridge onway_end_value=tertiary onway_end_key=highway 
+node 3971558691 onway_value=yes end_of=bridge lanes=1 aangle=212 angle=148 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 3971558693 onway_value=yes end_of=bridge lanes=1 aangle=32 angle=328 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 4130681540 onway_value=track aangle=48 angle=132 onway_key=highway 
+node 4075327725 onway_value=track aangle=3 angle=177 bangle=183 onway_key=highway 
+node 4033102383 onway_value=yes end_of=bridge angle=228 aangle=132 trail_visibility=good onway_key=bridge onway_end_value=path onway_end_key=highway 
+node 3926016699 onway_value=track aangle=168 angle=12 bangle=348 onway_key=highway 
+node 4033102712 onway_value=yes end_of=bridge angle=48 aangle=312 trail_visibility=good onway_key=bridge onway_end_value=path onway_end_key=highway 
+node 3837546231 onway_value=track aangle=165 angle=0 bangle=15 onway_key=highway 
+node 1920553040 onway_value=yes end_of=bridge angle=167 aangle=193 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 1920553041 onway_value=yes end_of=bridge angle=347 aangle=13 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 4102656371 onway_value=track onway_key=highway aangle=35 angle=145 
+node 4165360958 onway_value=track aangle=55 angle=127 bangle=230 onway_key=highway 
+node 4165360987 onway_value=path aangle=34 angle=128 bangle=249 onway_key=highway 
+node 4081411839 onway_value=track aangle=194 angle=166 bangle=14 onway_key=highway 
+node 4165965354 onway_value=path onway_key=highway aangle=169 angle=11 
+node 3952087991 onway_value=yes end_of=bridge angle=180 aangle=180 trail_visibility=intermediate onway_key=bridge onway_end_value=path onway_end_key=highway 
+node 4051232716 onway_value=path aangle=9 angle=164 bangle=202 onway_key=highway 
+node 3982137114 onway_value=track onway_key=highway aangle=269 angle=91 
+node 3814096324 onway_value=yes end_of=bridge angle=2 aangle=358 onway_key=bridge tracktype=grade3 onway_end_value=track onway_end_key=highway 
+node 3986456459 tunnel=culvert end_of=tunnel onway_end_value=ditch onway_end_key=waterway 
+node 3986456463 tunnel=culvert end_of=tunnel onway_end_value=ditch onway_end_key=waterway 
+node 3814097191 onway_value=track aangle=90 angle=92 bangle=266 onway_key=highway 
+node 3814097462 onway_value=yes end_of=bridge angle=168 aangle=192 onway_key=bridge tracktype=grade3 onway_end_value=track onway_end_key=highway 
+node 3814097567 onway_value=track aangle=62 angle=107 bangle=264 onway_key=highway 
+node 3814097844 onway_value=track aangle=283 angle=84 bangle=89 onway_key=highway 
+node 4020077839 onway_value=track aangle=258 angle=102 bangle=79 onway_key=highway 
+node 4102656770 onway_value=path aangle=247 angle=102 bangle=89 onway_key=highway 
+node 4128147735 onway_value=track aangle=341 angle=10 bangle=180 onway_key=highway 
+node 3777195112 onway_value=track aangle=107 angle=67 bangle=299 onway_key=highway 
+node 1996724486 onway_value=track onway_key=highway aangle=334 angle=26 
+node 3982138892 onway_value=path onway_key=highway aangle=103 angle=77 
+node 3718802896 onway_value=yes end_of=bridge lanes=1 aangle=43 angle=317 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 4244283073 tunnel=culvert end_of=tunnel onway_end_value=stream onway_end_key=waterway 
+node 4244283075 tunnel=culvert end_of=tunnel onway_end_value=stream onway_end_key=waterway 
+node 3952088866 onway_value=river aangle=341 angle=19 bangle=161 onway_key=waterway 
+node 3869624431 onway_value=track aangle=188 angle=172 bangle=9 onway_key=highway 
+node 4011347168 tunnel=culvert end_of=tunnel onway_end_value=stream onway_end_key=waterway 
+node 4178757382 tunnel=culvert end_of=tunnel onway_end_value=stream onway_end_key=waterway 
+node 4178757383 tunnel=culvert end_of=tunnel onway_end_value=stream onway_end_key=waterway 
+node 3718840746 onway_value=yes end_of=bridge lanes=1 aangle=180 angle=180 onway_key=bridge onway_end_value=unclassified onway_end_key=highway 
+node 4011347170 tunnel=culvert end_of=tunnel onway_end_value=stream onway_end_key=waterway 
+node 4060008401 sport=climbing 
+node 3979924744 onway_value=track aangle=295 angle=65 bangle=116 onway_key=highway 
+node 4011340785 tunnel=culvert end_of=tunnel onway_end_value=ditch onway_end_key=waterway 
+node 3839154683 onway_value=path aangle=129 angle=51 bangle=309 onway_key=highway 
+node 4020075268 onway_value=track aangle=296 angle=73 bangle=98 onway_key=highway 
+node 3982136620 onway_value=path onway_key=highway aangle=172 angle=8 
+node 3890669285 description=wayside_cross 
+node 3890669286 description=wayside_cross 
+node 3890669290 description=wayside_cross 
+node 4051233042 onway_value=yes end_of=bridge angle=216 aangle=144 onway_key=bridge tracktype=grade3 onway_end_value=track onway_end_key=highway 
+node 4051233603 onway_value=yes end_of=bridge angle=36 aangle=324 onway_key=bridge tracktype=grade3 onway_end_value=track onway_end_key=highway 
+node 3804556693 onway_value=track aangle=300 angle=50 bangle=139 onway_key=highway 
+node 3804556778 onway_value=track aangle=149 angle=31 bangle=329 onway_key=highway 
+node 4051234350 onway_value=track aangle=331 angle=38 bangle=134 onway_key=highway 
+node 4011347550 tunnel=culvert end_of=tunnel onway_end_value=ditch onway_end_key=waterway 
+node 2430268816 onway_value=yes end_of=bridge angle=163 aangle=197 onway_key=bridge onway_end_value=tertiary onway_end_key=highway 
+node 3858824509 name=Barrage_de_Pontabouland place=locality 
+way 313319502 description=Route_de_Saillant 
+way 380419452 highway=footway 
+way 396752226 highway=service 
+way 385729981 to_element=icon;_painting-cycle:_701 name=Chapelle_&amp;&amp;Saint-Martin_des_Côtes to_target=eglise 
+way 164792703 description=Chemin_de_la_Place 
+way 392498249 name=Parking_du_Terrain_&#xD;de_Jeu 
+way 181672543 description=Route_d&apos;Épezy 

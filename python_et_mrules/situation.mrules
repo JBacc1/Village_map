@@ -1,0 +1,63 @@
+
+features
+
+	route: highway
+	direction: towards
+	place: place
+	
+properties
+	map-background-color: white
+	
+rules
+	target: route
+		define
+			line-color: black
+			line-width: 1.8
+			curved: true
+		draw: line
+	
+	target: place
+		define
+			shape: circle
+			fill-color: white
+			fill-opacity: 1
+			shape-size: 5
+			line-width: 2
+		for: place=town
+			define
+				shape-size: 8
+				line-width: 3
+		draw: shape
+		define
+			font-size: 10
+			font-family: Open Sans
+			font-weight: bold
+			text-align-horizontal: near
+			text-halo-width: 1
+			text-halo-opacity: 0.5
+			text-max-width: 8
+			text-offset-horizontal: 8
+			text-offset-vertical: -5
+			text-line-spacing: 0.9
+		for: place=town
+			define
+				text-offset-horizontal: 12
+		for: @isMatch(name,"Sail")
+			define
+				text-offset-vertical: 5
+		draw: text
+
+	target: direction
+		define
+			font-size: 10
+			font-family: Open Sans
+			font-weight: bold
+			text-align-horizontal: near
+			text-halo-width: 1
+			text-halo-opacity: 0.5
+			text-max-width: 5
+//			text-offset-horizontal: 8
+//			text-offset-vertical: -5
+			text-line-spacing: 0.9
+			text: "direction " name
+		draw: text

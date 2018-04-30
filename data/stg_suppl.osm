@@ -1,0 +1,400 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='false' generator='JOSM'>
+  <node id='-281315' action='modify' lat='45.69329469834' lon='3.90932500094'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281317' action='modify' lat='45.69374434143' lon='3.90864743663'>
+    <tag k='name' v='Impasse du Pic' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281319' action='modify' lat='45.69650791934' lon='3.9131854417'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281321' action='modify' lat='45.69707626433' lon='3.91332755989'>
+    <tag k='name' v='Chemin de &#xD;la Chanal' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281323' action='modify' lat='45.69766351389' lon='3.9183229991'>
+    <tag k='disused:rendu' v='end' />
+  </node>
+  <node id='-281325' action='modify' lat='45.69818526747' lon='3.91759546873'>
+    <tag k='disused' v='Chemin Vieux' />
+    <tag k='disused:rendu' v='name' />
+  </node>
+  <node id='-281327' action='modify' lat='45.69260793544' lon='3.90933373304'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281329' action='modify' lat='45.69271967926' lon='3.90989039494'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Chemin de &#xD;la Place' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281331' action='modify' lat='45.69208914258' lon='3.89702545467'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281333' action='modify' lat='45.69192994323' lon='3.89766371964'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Chemin de Davoissenne' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281335' action='modify' lat='45.6923841162' lon='3.8975616037'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281337' action='modify' lat='45.70023965242' lon='3.93243215799'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281339' action='modify' lat='45.69994155519' lon='3.93322213903'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Impasse &#xD;du Cercle' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281341' action='modify' lat='45.70018390071' lon='3.93135408416'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281343' action='modify' lat='45.69978795475' lon='3.93107031063'>
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Place &#xD;de l&apos;École' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281345' action='modify' lat='45.70071843489' lon='3.93085158986'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281347' action='modify' lat='45.70028943006' lon='3.93037132767'>
+    <tag k='displace-horizontal' v='left' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Rue &#xD;de l&apos;École' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281349' action='modify' lat='45.70110204342' lon='3.93132385538'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281351' action='modify' lat='45.70099970918' lon='3.9320970148'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Rue du Tour &#xD;de l&apos;Église' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281353' action='modify' lat='45.70084053012' lon='3.93120070864'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281355' action='modify' lat='45.6997187363' lon='3.93177401398'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Place &#xD;de l&apos;Église' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281357' action='modify' lat='45.70129021892' lon='3.93206562108'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281359' action='modify' lat='45.7014825485' lon='3.93257183787'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Rue du Pierré' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281361' action='modify' lat='45.70131764426' lon='3.93121533663'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281363' action='modify' lat='45.70185197157' lon='3.93184042587'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Place &#xD;de la Paix' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281365' action='modify' lat='45.70384311174' lon='3.93221233912'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281367' action='modify' lat='45.70366015249' lon='3.93255380914'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Parking du &#xD;Terrain de Jeux' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281369' action='modify' lat='45.70055927679' lon='3.93117745774'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281371' action='modify' lat='45.6997537472' lon='3.9304561037'>
+    <tag k='displace-horizontal' v='left' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Passage &#xD;de la Ruelle' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281373' action='modify' lat='45.70119859602' lon='3.93065305728'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281375' action='modify' lat='45.70122930581' lon='3.93015512203'>
+    <tag k='displace-horizontal' v='left' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Place du &#xD;Grand Puits' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281377' action='modify' lat='45.70122117029' lon='3.93098954069'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281379' action='modify' lat='45.70179278894' lon='3.93016066108'>
+    <tag k='displace-horizontal' v='left' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Place de la Fontaine' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281381' action='modify' lat='45.70060477332' lon='3.93144614451'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281383' action='modify' lat='45.70045059806' lon='3.93271669704'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Square Méchin' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281385' action='modify' lat='45.69536663127' lon='3.92547797461'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281387' action='modify' lat='45.69556713843' lon='3.9245444934'>
+    <tag k='displace-horizontal' v='left' />
+    <tag k='name' v='Chemin &#xD;de la Vernay' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281389' action='modify' lat='45.69614451214' lon='3.91893864845'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281391' action='modify' lat='45.69586395176' lon='3.91945265907'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Chemin des Plats' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281393' action='modify' lat='45.71107314813' lon='3.94174176436'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281395' action='modify' lat='45.711263861' lon='3.94217711169'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Chemin de &#xD;la Rue Ronde' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281397' action='modify' lat='45.68803573731' lon='3.9476548094'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281399' action='modify' lat='45.68830525556' lon='3.94805119905'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Route &#xD;de Mornans' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281401' action='modify' lat='45.72163347327' lon='3.90717961408'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281403' action='modify' lat='45.72132083393' lon='3.90705383753'>
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Route des &#xD;Grandes Combes' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281405' action='modify' lat='45.71736664703' lon='3.91883280313'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281407' action='modify' lat='45.71750968844' lon='3.91915664457'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Route du Verdier' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281409' action='modify' lat='45.71271782881' lon='3.91536013638'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281411' action='modify' lat='45.71263286766' lon='3.91583907504'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Route d&apos;Épezy' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281413' action='modify' lat='45.70131307409' lon='3.93447648215'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281415' action='modify' lat='45.70126256539' lon='3.93483753677'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Place &#xD;du Cimetière' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281417' action='modify' lat='45.69983683194' lon='3.92892311609'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281419' action='modify' lat='45.69891592821' lon='3.93067929076'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Chemin des Bordeaux' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281421' action='modify' lat='45.68947165107' lon='3.9501523228'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281423' action='modify' lat='45.68978209214' lon='3.95048569808'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Chemin &#xD;Croix de la Donne' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281425' action='modify' lat='45.68722653144' lon='3.9474796137'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-281427' action='modify' lat='45.68752170429' lon='3.94783694784'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='name' v='Chemin &#xD;du Grand Pré' />
+    <tag k='rendu' v='name' />
+  </node>
+  <node id='-281429' action='modify' lat='45.68844169065' lon='3.94750000225'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-435490' action='modify' lat='45.70201315795' lon='3.93176697382'>
+    <tag k='rendu' v='end' />
+  </node>
+  <node id='-435491' action='modify' lat='45.70224589091' lon='3.93216407529'>
+    <tag k='displace-horizontal' v='right' />
+    <tag k='displace-vertical' v='bottom' />
+    <tag k='name' v='Rue du Lavoir' />
+    <tag k='rendu' v='name' />
+  </node>
+  <way id='-281431' action='modify'>
+    <nd ref='-281315' />
+    <nd ref='-281317' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281433' action='modify'>
+    <nd ref='-281319' />
+    <nd ref='-281321' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281435' action='modify'>
+    <nd ref='-281323' />
+    <nd ref='-281325' />
+    <tag k='disused' v='line' />
+  </way>
+  <way id='-281437' action='modify'>
+    <nd ref='-281327' />
+    <nd ref='-281329' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281439' action='modify'>
+    <nd ref='-281331' />
+    <nd ref='-281333' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281441' action='modify'>
+    <nd ref='-281335' />
+    <nd ref='-281333' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281443' action='modify'>
+    <nd ref='-281337' />
+    <nd ref='-281339' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281445' action='modify'>
+    <nd ref='-281341' />
+    <nd ref='-281343' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281447' action='modify'>
+    <nd ref='-281345' />
+    <nd ref='-281347' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281449' action='modify'>
+    <nd ref='-281349' />
+    <nd ref='-281351' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281451' action='modify'>
+    <nd ref='-281353' />
+    <nd ref='-281355' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281453' action='modify'>
+    <nd ref='-281357' />
+    <nd ref='-281359' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281455' action='modify'>
+    <nd ref='-281361' />
+    <nd ref='-281363' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281457' action='modify'>
+    <nd ref='-281365' />
+    <nd ref='-281367' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281459' action='modify'>
+    <nd ref='-281369' />
+    <nd ref='-281371' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281461' action='modify'>
+    <nd ref='-281373' />
+    <nd ref='-281375' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281463' action='modify'>
+    <nd ref='-281377' />
+    <nd ref='-281379' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281465' action='modify'>
+    <nd ref='-281381' />
+    <nd ref='-281383' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281467' action='modify'>
+    <nd ref='-281385' />
+    <nd ref='-281387' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281469' action='modify'>
+    <nd ref='-281389' />
+    <nd ref='-281391' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281471' action='modify'>
+    <nd ref='-281393' />
+    <nd ref='-281395' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281473' action='modify'>
+    <nd ref='-281397' />
+    <nd ref='-281399' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281475' action='modify'>
+    <nd ref='-281401' />
+    <nd ref='-281403' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281477' action='modify'>
+    <nd ref='-281405' />
+    <nd ref='-281407' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281479' action='modify'>
+    <nd ref='-281409' />
+    <nd ref='-281411' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281481' action='modify'>
+    <nd ref='-281413' />
+    <nd ref='-281415' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281483' action='modify'>
+    <nd ref='-281417' />
+    <nd ref='-281419' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281485' action='modify'>
+    <nd ref='-281421' />
+    <nd ref='-281423' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281487' action='modify'>
+    <nd ref='-281425' />
+    <nd ref='-281427' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-281489' action='modify'>
+    <nd ref='-281429' />
+    <nd ref='-281399' />
+    <tag k='rendu' v='line' />
+  </way>
+  <way id='-435489' action='modify'>
+    <nd ref='-435490' />
+    <nd ref='-435491' />
+    <tag k='rendu' v='line' />
+  </way>
+</osm>

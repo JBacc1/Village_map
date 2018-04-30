@@ -1,0 +1,634 @@
+﻿
+
+features
+	
+	eglise: node[amenity=place_of_worship OR @isOneOf(building,church,chapel,cathedral)] area[amenity=place_of_worship OR @isOneOf(building,church,chapel,cathedral)]
+	rocher: node[natural=stone OR natural=rock] area[natural=stone OR natural=rock]
+	reservoir eau: node[(landuse=reservoir AND covered=yes) OR man_made=reservoir_covered] area[(landuse=reservoir AND covered=yes) OR man_made=reservoir_covered]
+	tour: node[@isOneOf(man_made,lighthouse,mast,communication_tower) OR (man_made=tower AND ((NOT(tower:type)) OR @isOneOf(tower:type,communication,observation)))] area[@isOneOf(man_made,lighthouse,mast,communication_tower) OR (man_made=tower AND ((NOT(tower:type)) OR @isOneOf(tower:type,communication,observation)))]
+	escalade: node[sport=climbing] way[sport=climbing]
+	police pompier mairie: node[@isOneOf(amenity,police,fire_station,townhall,school) ] area[@isOneOf(amenity,police,fire_station,townhall,school) OR building=chapel]
+//	ecole: node[@isOneOf(amenity,college,kindergarten,school,university)] area[@isOneOf(amenity,college,kindergarten,school,university)]
+	divers ponctuel: @isOneOf(leisure,bird_hide,wildlife_hide,hunting_stand,playground) OR amenity=hunting_stand OR @isOneOf(man_made,flagpole,kiln,monitoring_station,watermill,water_well) OR aeroway=windsock OR @isOneOf(leisure,bird_hide,wildlife_hide,hunting_stand,playground) OR amenity=hunting_stand
+
+
+	points
+		hameau: place
+		calvaire: @isOneOf(historic,wayside_cross,wayside_shrine) OR (man_made=cross OR summit_cross=yes)
+		fontaine: amenity=drinking_water OR natural=spring OR amenity=fountain OR amenity=watering_place OR @isOneOf(drinking_water,yes,conditional,conditionnal) 
+		sommet: natural=peak
+		arbre: natural=tree
+		arret bus: highway=bus_stop
+		point de vue: tourism=viewpoint OR map_type=toposcope
+		parking point: amenity=parking AND NOT @isOneOf(access,private,no,customers)
+		
+		fusee point: rendu=end
+		fusee name: rendu=name
+		voie name node: highway=node AND name
+
+	lines
+		route principale: highway=motorway OR highway=motorway_link OR highway=trunk OR highway=trunk_link OR highway=primary OR highway=primary_link OR highway=secondary OR highway=secondary_link
+		route secondaire: highway=tertiary OR highway=tertiary_link 
+		route mineure: highway=residential OR highway=unclassified 
+		route service: (highway=service AND NOT @isOneOf(access,no,private))
+		
+		chemin tracteur: highway=track
+		chemin pieton: @isOneOf(highway,footway,path,cycleway,steps) AND NOT footway=sidewalk AND NOT subway=yes
+		
+		voie name way: highway AND name
+		
+		riviere: @isOneOf(waterway,river,canal,stream,ditch,drain,ditch) AND NOT @isOneOf(tunnel,yes,culvert)
+		
+		barrage lineaire: @isOneOf(waterway,dam,weir)
+		haie: barrier=hedge OR natural=hedge or natural=tree_row
+		falaise: natural=cliff
+		leveeterre: man_made=embankment AND (NOT highway) AND (NOT railway) AND (NOT waterway)
+		
+		circuit balise: circuit=yes
+		circuit Diable: gpstrack[name=Diable] 
+		circuit Seigneurs: gpstrack[name=Seigneurs] 
+		circuit Martin: gpstrack[name=Martin] 
+		circuit Moriere: gpstrack[name=Moriere] 
+		
+		fusee ligne: rendu=line
+
+	areas
+		batiment: building AND NOT building=no
+		
+		cimetiere: landuse=cemetery OR amenity=grave_yard
+		sport: leisure=pitch OR disused:leisure=pitch
+		terrain: landuse or natural or waterway=riverbank
+		
+		limite: boundary=outer
+		barrage surfacique: @isOneOf(waterway,dam,weir)
+		
+		parking surface: amenity=parking AND NOT @isOneOf(access,private,no,customers)
+
+properties
+	map-background-color	: #F1EEE8
+	map-background-opacity	: 1
+	map-sea-color : #B5D0D0
+	font-weight : bold
+	font-family : Verdana
+	text-max-width : 7
+	text-halo-width : 25%
+	text-halo-opacity : 0.75
+	text-align-horizontal : center
+	text-align-vertical : center
+	font-stretch : 0.9
+	map.rendering.lflp.min-buffer-space : 1
+	map.rendering.lflp.max-allowed-corner-angle : 60
+
+rules
+	target: limite
+		define
+			fill-color: white
+			fill-opacity: 0.7
+			line-color: purple
+			line-width: 1
+			line-style: dashdot
+			line-opacity: 0.9
+		draw: fill
+		
+	target: hameau
+		define
+			font-family: Open Sans
+			font-size: 12
+			text-line-spacing: 0.75
+			text-halo-width: 1
+			text-opacity: 1
+			text-halo-opacity: 0.85
+			font-stretch: 0.85
+			text: name
+
+		for: ref:INSEE
+			stop
+		elsefor: place=neighbourhood
+			define
+				font-style: italic
+				font-weight: bold
+				text: @up(name)
+				font-stretch: 0.8
+		elsefor: place=hamlet
+			define
+				font-weight: bold
+		elsefor: place=isolated_dwelling
+			define
+				font-size: 11
+		elsefor: place=locality
+			define
+				font-style: italic
+				font-size: 11
+				font-stretch: 0.825
+				font-weight: normal
+		else
+			define
+				text-color: red
+		draw: text
+
+	target: fusee*
+		define
+			line-color: black
+			line-width: 1
+			shape: circle
+			shape-size: 0.85
+			fill-color: white
+			font-family: DejaVu Sans Condensed
+//			font-family: Open Sans Semibold
+			font-size: 9
+			text-color: black
+			text-opacity: 1
+			text-halo-width: 1
+			text-halo-color: white
+			text-halo-opacity: 0.9
+			text-align-vertical: far
+			text-line-spacing: 0.95
+			text-max-width: 9
+		for: displace-horizontal=right
+			define
+				text-align-horizontal: near
+				text-align-vertical: center
+				text-offset-horizontal: 1.5
+		elsefor: displace-horizontal=left
+			define
+				text-align-horizontal: far
+				text-align-vertical: center
+				text-offset-horizontal: -1.5
+		elsefor: displace-vertical=bottom
+			define
+				text-align-vertical: near
+
+		if: *ligne
+			define
+				painting-cycle: 601
+			draw: line
+		elseif: *point
+			draw: shape
+		elseif: *name
+			draw: text
+	
+	target: police pompier*
+		define
+			shape: diamond
+			shape-size: 8
+			fill-color: yellow 
+			fill-opacity: 0.6
+			line-color: yellow red 40%
+			line-opacity: 0.95
+			line-width: 1
+			shape-mode: center
+		draw: shape
+		define
+			font-family: DejaVu Sans Condensed
+			font-style: italic
+			font-weight: bold
+			font-stretch: 0.9
+			font-size: 8
+			text-color: red black 10%
+			text-opacity: 0.8
+			text-halo-width: 0
+			text-line-spacing: 0.85
+			text-offset-horizontal: -7
+			text-align-horizontal: far
+			text-offset-vertical: -4
+			text-max-width: 11
+			shape: square
+			fill-color: yellow white 50%
+			fill-opacity: 0.5
+			shield-padding-left: 1
+			shield-padding-right: 1
+			shield-padding-top: 0
+			shield-padding-bottom: 0
+			shield-resize-mode: free
+			line-style: none
+			painting-cycle: 710
+		for: amenity=fire_station
+			define
+				text: "Pompiers"
+				placement-value: 9
+		elsefor: @isMatch(name, "olice|OLICE")
+			define
+				text: "Police"
+				placement-value: 4
+		elsefor: @isMatch(name, "endarmeri|ENDARMERI") OR @isMatch(operator, "endarmeri|ENDARMERI")
+			define
+				text: "Gendarmerie"
+				placement-value: 4
+		elsefor: amenity=townhall
+			define
+				text: "Mairie"
+				text-offset-horizontal: 6
+				text-align-horizontal: near
+		elsefor: amenity=school
+			define
+				text: "École"
+				text-offset-horizontal: 6
+				text-align-horizontal: near
+
+		draw: shield
+	target: ecole
+		define
+			font-family: DejaVu Sans
+			font-style: italic
+			font-weight: bold
+			text-color: yellow brown 50%
+			text-color: #800000
+			font-stretch: 0.8
+			text-letter-spacing: -0.03
+			font-size: 9
+			text-opacity: 0.9
+			text-halo-width: 1
+			text-halo-color: white
+			text-halo-opacity: 0.5
+			text-line-spacing: 0.8
+			text-align-horizontal: center
+		for: @isOneOf(school:FR,maternelle,"élémentaire",primaire)
+			define
+				text: "École"
+		elsefor: school:FR="collège"
+			define
+				text: "Collège"
+				placement-value: 2.5
+		elsefor: @isOneOf(school:FR,"lycée",secondaire)
+			define
+				text: "Lycée"
+				placement-value: 3.5
+		elsefor: @isOneOf(amenity,university,college)
+			define
+				text: "Univ."
+				placement-value: 3.5
+		elsefor: @isOneOf(amenity,kindergarten,school)
+			stop
+		else
+			stop
+		draw: text
+	target: arret bus
+		define
+			shape: diamond
+			shape-size: 4
+			line-color: purple
+			line-width: 1.6
+			fill-color: red white 30%
+			fill-opacity: 0.8
+		draw: shape
+	target: point de vue
+		define
+			icon-image: stg/icons/pointdevue6_tr.png
+			icon-width: 10
+			shape-mode: center			
+		draw: icon
+
+	target: eglise
+		for: religion=christian
+			for: building=chapel
+				define
+					icon-image: stg/icons/chapelle_tr.png
+					icon-width: 8
+			else
+				define
+					icon-image: stg/icons/eglise2_tr.png				
+					icon-width: 8
+//Ajout automatique par le script to_renderer.py
+		//Chapelle  Saint-Martin des Côtes
+		for: id=385729981
+			define
+				 painting-cycle: 701
+		draw: icon
+
+	target: calvaire
+		define
+			icon-image: stg/icons/calvaire3_tr.png
+			icon-width: 6.5
+		draw: icon
+	target: escalade
+		define
+			shape: circle
+			shape-size: 8.5
+			fill-color: #347C17
+			fill-opacity: 0.4
+			line-color: #347C17
+			line-opacity: 0.9
+			line-width: 1
+			shape-mode: center
+			shape-orientation: fixed
+		draw: shape
+		define
+			icon-image: stg/icons/escalade1_tr.png
+			icon-width: 14
+			shape-mode: center
+			shape-orientation: fixed
+		draw: icon
+	target: sommet
+		define
+			shape: triangle
+			fill-color: white
+			line-width: 1
+			line-color: black
+			line-opacity: 1
+			shape-size: 7
+			fill-opacity: 1
+		draw: shape
+		for: ele 
+			define
+				text: name " (" @elevation(ele) ")"
+		define
+			font-family: Open Sans
+			font-weight: bold
+			font-style: italic
+			font-size: 10
+			text-color: black
+			font-stretch: 0.9
+			text-halo-width: 0.3
+			text-halo-opacity: 0.8
+			text-line-spacing: 0.8
+			text-offset-vertical: 3
+			text-align-vertical: near
+		draw: text
+	
+	
+	target: fontaine
+		define
+			shape: circle
+			fill-color: cyan #0099ff 30%
+			shape-size: 2.8
+			line-width: 0.5
+			fill-opacity: 0.9
+			line-color: cyan blue 40%
+		draw: shape
+	target: rocher
+		define
+			icon-image: stg/icons/rocher1_tr.png
+			icon-width: 4.5
+			shape-mode: center
+		draw: icon
+	target: reservoir eau
+		define
+			shape: custom
+			shape-def: m:10,10; l:-10,-10; m:-10,10; l:10,-10;
+			line-width: 1.4
+			line-color: cyan blue 40%
+			shape-size: 4.5
+		draw: shape
+	target: tour
+		define
+			icon-image: stg/icons/tour2_tr.png
+			icon-width: 12.5
+		for: tower:type=communication OR man_made=mast 
+			define
+				icon-width: 11
+		draw: icon
+	target: arbre
+		define
+			shape: circle
+			shape-size: 1.4
+			line-width: 0.9
+			line-color: #bffd8f green 30%
+			fill-color: #bffd8f
+			fill-opacity: 0.1
+			line-opacity: 0.9
+		draw: shape
+
+	target: divers ponctuel
+		define
+			shape: diamond
+			shape-size: 1.5
+			fill-color: black
+			fill-opacity: 0.95
+			line-width: 0.5
+			line-color: black
+		draw: shape
+
+	
+	target: voie name*
+		define
+			font-family: DejaVu Sans Condensed
+//			font-family: Open Sans Semibold
+			font-size: 9
+			text-color: black
+			text-opacity: 1
+			text-halo-width: 1
+			text-halo-color: white
+			text-halo-opacity: 0.9
+		draw: text
+
+
+	target: route *
+		define
+			line-color: white
+		if: *principale
+			define
+				line-width: 5.8
+		elseif: *secondaire
+			define
+				line-width: 4.9
+		elseif: *mineure
+			define
+				line-width: 4
+		elseif: *service
+			define
+				line-width: 2.7
+		draw: line
+	target: chemin tracteur
+		define
+			line-color: white
+			line-width: 2.5
+		draw: line
+	target: route *
+		define
+			line-color: gray
+		if: *principale
+			define
+				line-width: 7
+		elseif: *secondaire
+			define
+				line-width: 6
+		elseif: *mineure
+			define
+				line-width: 5
+		elseif: *service
+			define
+				line-width: 3.5
+		draw: line
+	target: chemin tracteur
+		define
+			line-color: gray
+			line-width: 3.2
+			line-style: dash
+		draw: line
+		
+	target: chemin pieton
+		define
+			line-color: gray
+			line-width: 1.5
+			line-style: dash8to2
+		draw: line
+	target: circuit *
+		define
+			line-color: #ff3300 orange 20%
+			line-width: 3
+			line-opacity: 0.65
+			line-offset-sides: left
+			line-offset-sides: right
+			line-offset: 3.5
+			line-offset-miter-limit: 2.8
+		if: *Diable
+			define
+				line-color: blue
+				line-opacity: 0.75
+				line-offset-sides: left
+		elseif: *Martin
+			define
+				line-color: red
+				line-opacity: 0.75
+				line-offset-sides: left
+		elseif: *Moriere
+			define
+				line-color: red
+				line-opacity: 0.75
+//				line-offset-sides: left
+		elseif: *Seigneurs
+			define
+				line-color: red
+				line-opacity: 0.75
+				line-offset-sides: left
+
+		draw: line
+	
+	target: parking*
+		define
+			min-zoom: 17
+			line-color: yellow orange 40%
+			line-opacity: 0.8
+			line-width: 0.8
+			fill-color: yellow 
+			fill-opacity: 0.6
+		draw: fill
+		if: *point
+			define
+				min-zoom: 17
+				shape: square
+				shape-size: 10
+				line-width: 1
+				fill-color: blue black 10%
+				line-color: blue black 10%
+				fill-opacity: 0.6
+				line-opacity: 0.8
+			draw: shape
+			define
+				shape: custom
+				shape-def: p:white,0.85;pw:1.5;m:-5,-1;l:0,-1;a:6,5,0,9;l:1,9;l:-5,9;l:-5,-9;
+				shape-size: 10
+			draw: shape
+
+			
+	target: barrage*
+		define
+			line-color: black
+			line-opacity: 1
+			line-start-cap: triangle
+			line-end-cap: triangle
+			line-width: 2
+		draw: line
+		if: *surfacique
+			define
+				fill-color: black
+				fill-opacity: 0.9
+				line-style: none
+			draw: fill
+
+	target: riviere
+		define
+			painting-cycle: 595
+			line-style: solid
+			line-color: #52a5e9 white 20%
+			line-width: 1.5
+		for: intermittent=yes
+			define 
+				line-style: dash8to2
+		draw: line
+	target: falaise
+		define
+			icon-image: stg/icons/falaise4_tr.png
+			icon-width: 0.8
+			shape-mode: linear
+			shape-orientation: flow
+			shape-spacing: 1.9
+			painting-cycle: 590
+		draw: icon
+		define
+			line-width: 1.2
+			line-color: black
+			line-opacity: 1
+		draw: line
+	target: leveeterre
+		define
+			icon-image: stg/icons/leveeterre2_tr.png
+			icon-width: 0.75
+			shape-mode: linear
+			shape-orientation: flow
+			shape-spacing: 2.4
+			painting-cycle: 590
+		draw: icon
+		define
+			line-width: 0.9
+			line-color: #931900 yellow 20%
+			line-opacity: 0.7
+		draw: line
+
+	target: haie
+		define
+			line-color: green white 20%
+			line-width: 1.6
+			line-opacity: 0.7
+		draw: line
+	
+
+	target: batiment
+		define
+			line-color: brown white 25%
+			line-width: 1
+			fill-color: brown white 55%
+		draw: fill
+	target: cimetiere
+		define
+			fill-texture: R25/Textures/cimetiere9.png
+			line-color: gray black 10%
+			line-width: 1.4
+			line-opacity: 0.9
+		draw: fill
+	target: sport
+		define
+			line-color: green white 50%
+			line-width: 1.5
+			fill-color: green white 75%
+		draw: fill
+		
+	target: terrain
+		define
+			line-style: none
+		for: landuse=meadow OR natural=grassland OR landuse=grass
+			define
+				fill-color: #bffd8f white 70%
+		elsefor: landuse=forest OR natural=wood
+			define
+				fill-color: #a3edb9 white 15%
+		elsefor: @isOneOf(landuse,farm,farmland,allotments,greenhouse_horticulture,plant_nursery)
+			define
+				fill-color: #d5a40f white 85%
+		elsefor: natural=heath
+			define
+				fill-color: #bffd8f
+				fill-opacity: 0.2
+			draw: fill
+			define
+				fill-texture: R25/Textures/landes_tr.png
+		elsefor: natural=water OR waterway=riverbank
+			define
+				line-style: none
+				line-color: #52a5e9 black 20%
+				line-opacity: 0.8
+				line-width: 0.8
+				fill-color: #52a5e9 white 55%
+		else 
+			stop
+		draw: fill

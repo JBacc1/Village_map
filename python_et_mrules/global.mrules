@@ -1,0 +1,66 @@
+features
+	route: @isOneOf(highway,primary,secondary,tertiary,unclassified,residential)
+	direction: towards
+	place: @isOneOf(place,neighbourhood,hamlet,isolated_dwelling)
+	limite: boundary=outer
+
+properties
+	map-background-color: white
+	
+rules
+	target: limite
+		define
+			fill-color: white
+			fill-opacity: 1
+			line-color: purple
+			line-width: 1
+			line-style: none
+			line-opacity: 0.9
+			painting-cycle: 601
+		draw: fill
+		define
+			fill-color: black
+			fill-opacity: 0.7
+			line-color: purple
+			line-width: 1
+			line-style: none
+			line-opacity: 0.9
+			painting-cycle: 602
+		draw: fill
+
+	target: route
+		define
+			line-color: gray white 25%
+			line-width: 0.8
+			line-opacity: 1
+			curved: true
+		for: @isOneOf(highway,primary,secondary)
+			define
+				line-width: 1.6
+		elsefor: highway=tertiary
+			define
+				line-width: 1.2
+		draw: line
+	
+	target: place
+		define
+			shape: circle
+			fill-color: white
+			fill-opacity: 1
+			line-color: black
+			shape-size: 3
+			line-width: 1.5
+//		draw: shape
+		define
+			font-size: 10
+			font-family: DejaVu Sans Condensed
+			font-weight: bold
+			font-stretch: 0.84
+			text-halo-width: 1
+			text-halo-opacity: 0.5
+			text-max-width: 6
+			text-line-spacing: 0.9
+		for: @isMatch(name,"Sail")
+			define
+				text-offset-vertical: 5
+		draw: text

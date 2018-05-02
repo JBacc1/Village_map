@@ -1,10 +1,10 @@
 ﻿# Création de plan de village
 
-La carte du village de Saint-Georges-en-Couzan a été créée avec les outils suivants :
+Le plan du village de Saint-Georges-en-Couzan (visible ici : ) a été créée avec les outils suivants :
  - données OpenStreetMap (licence ODbL)
  - modifications locales sous JOSM
  - traitement des modifications par les scripts python compare/to_renderer
- - rendus sous Maperitive 
+ - rendus sous Maperitive (styles CC-by-sa 4.0)
  - assemblage sous Gimp
 
 Les éléments fournis ici sont :  

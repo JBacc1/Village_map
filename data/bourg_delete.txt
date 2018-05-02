@@ -1,2 +1,3 @@
 node 1757414058 name 
 node 5457368986 recycling:glass 
+way 370465192 name 

@@ -8,7 +8,6 @@ features
 	tour: node[@isOneOf(man_made,lighthouse,mast,communication_tower) OR (man_made=tower AND ((NOT(tower:type)) OR @isOneOf(tower:type,communication,observation)))] area[@isOneOf(man_made,lighthouse,mast,communication_tower) OR (man_made=tower AND ((NOT(tower:type)) OR @isOneOf(tower:type,communication,observation)))]
 	escalade: node[sport=climbing] way[sport=climbing]
 	police pompier mairie: node[@isOneOf(amenity,police,fire_station,townhall,school) ] area[@isOneOf(amenity,police,fire_station,townhall,school) OR building=chapel]
-//	ecole: node[@isOneOf(amenity,college,kindergarten,school,university)] area[@isOneOf(amenity,college,kindergarten,school,university)]
 	divers ponctuel: @isOneOf(leisure,bird_hide,wildlife_hide,hunting_stand,playground) OR amenity=hunting_stand OR @isOneOf(man_made,flagpole,kiln,monitoring_station,watermill,water_well) OR aeroway=windsock OR @isOneOf(leisure,bird_hide,wildlife_hide,hunting_stand,playground) OR amenity=hunting_stand
 
 
@@ -93,7 +92,7 @@ rules
 	target: hameau
 		define
 			font-family: Open Sans
-			font-size: 12
+			font-size: 14
 			text-line-spacing: 0.75
 			text-halo-width: 1
 			text-opacity: 1
@@ -114,7 +113,7 @@ rules
 				font-weight: bold
 		elsefor: place=isolated_dwelling
 			define
-				font-size: 11
+				font-size: 13
 		elsefor: place=locality
 			define
 				font-style: italic
@@ -184,6 +183,8 @@ rules
 			font-weight: bold
 			font-stretch: 0.9
 			font-size: 8
+			font-size: 16:8; 17:10
+
 			text-color: red black 10%
 			text-opacity: 0.8
 			text-halo-width: 0
@@ -225,43 +226,24 @@ rules
 				text-offset-horizontal: 6
 				text-align-horizontal: near
 
+//Ajout automatique par le script to_renderer.py
+		//Crêche \nLes Petits Koalas
+		for: id=5457368986
+			define
+				 text: name
+				 text-align-horizontal: far
+				 text-offset-horizontal: -7
+		//La Cle des Montagnes
+		for: id=3762215889
+			define
+				 text: "École La Clé \ndes Montagnes"
+		//Mediathèque
+		for: id=5537998779
+			define
+				 text: name
+				 text-align-horizontal: far
+				 text-offset-horizontal: -7
 		draw: shield
-	target: ecole
-		define
-			font-family: DejaVu Sans
-			font-style: italic
-			font-weight: bold
-			text-color: yellow brown 50%
-			text-color: #800000
-			font-stretch: 0.8
-			text-letter-spacing: -0.03
-			font-size: 9
-			text-opacity: 0.9
-			text-halo-width: 1
-			text-halo-color: white
-			text-halo-opacity: 0.5
-			text-line-spacing: 0.8
-			text-align-horizontal: center
-		for: @isOneOf(school:FR,maternelle,"élémentaire",primaire)
-			define
-				text: "École"
-		elsefor: school:FR="collège"
-			define
-				text: "Collège"
-				placement-value: 2.5
-		elsefor: @isOneOf(school:FR,"lycée",secondaire)
-			define
-				text: "Lycée"
-				placement-value: 3.5
-		elsefor: @isOneOf(amenity,university,college)
-			define
-				text: "Univ."
-				placement-value: 3.5
-		elsefor: @isOneOf(amenity,kindergarten,school)
-			stop
-		else
-			stop
-		draw: text
 	target: arret bus
 		define
 			shape: diamond
@@ -288,11 +270,6 @@ rules
 				define
 					icon-image: stg/icons/eglise2_tr.png				
 					icon-width: 8
-//Ajout automatique par le script to_renderer.py
-		//Chapelle  Saint-Martin des Côtes
-		for: id=385729981
-			define
-				 painting-cycle: 701
 		draw: icon
 
 	target: calvaire
@@ -403,7 +380,7 @@ rules
 		define
 			font-family: DejaVu Sans Condensed
 //			font-family: Open Sans Semibold
-			font-size: 9
+			font-size: 16:9; 17:11
 			text-color: black
 			text-opacity: 1
 			text-halo-width: 1

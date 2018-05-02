@@ -1,5 +1,6 @@
 node 1757413984 place=hamlet 
 node 1757414058 description=Le_Bourg 
-node 5457368986 to_target=police_pompier* amenity=school name=Crêche_\nLes_Petits_Koalas to_element=shield;_text:_name;_text-align-horizontal:_far;_text-offset-horizontal:_-7 
-node 3762215889 to_element=shield;_text:_&quot;École_La_Clé_\ndes_Montagnes&quot; to_target=police_pompier* 
-node 5537998779 to_target=police_pompier* amenity=school name=Médiathèque to_element=shield;_text:_name;_text-align-horizontal:_far;_text-offset-horizontal:_-7 
+node 5457368986 amenity=school to_target=police_pompier* name=Crêche_\nLes_Petits_Koalas to_element=shield;_text:_name;_text-align-horizontal:_far;_text-offset-horizontal:_-7 
+node 3762215889 to_target=police_pompier* to_element=shield;_text:_&quot;École_La_Clé_\ndes_Montagnes&quot; 
+node 5537998779 amenity=school to_target=police_pompier* name=Médiathèque to_element=shield;_text:_name;_text-align-horizontal:_far;_text-offset-horizontal:_-7 
+way 370465192 description=Rue_du_Tour_de_l&apos;Église 

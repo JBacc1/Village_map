@@ -1,6 +1,6 @@
 ﻿# Création de plan de village
 
-Le plan du village de Saint-Georges-en-Couzan (visible ici : [http://randocarto.fr/demo/SaintGeorges_1240_par_900mm_300dpi.png] (http://randocarto.fr/demo/SaintGeorges_1240_par_900mm_300dpi.png)) a été créée avec les outils suivants :
+Le plan du village de Saint-Georges-en-Couzan (visible ici : [http://randocarto.fr/demo/SaintGeorges_1240_par_900mm_300dpi.png] (http://randocarto.fr/demo/SaintGeorges_1240_par_900mm_300dpi.png)) a été créé avec les outils suivants :
  - données OpenStreetMap (licence ODbL)
  - modifications locales sous JOSM
  - traitement des modifications par les scripts python compare/to_renderer
